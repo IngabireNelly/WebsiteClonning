@@ -116,6 +116,13 @@ section p {
     margin-right: auto; /* Align the image to the center */
     padding-left: 0px; /* Adds space between the image and left border */
     padding-right: 0px; /* Adds space between the image and right border */
+    width: 100%; 
+}
+.image-container {
+    position: relative;
+    width: 100%; /* Makes sure the container spans the full section width */
+    max-width: 100%;
+    margin: 0 auto; /* Centers the container */
 }
 
 
@@ -141,4 +148,48 @@ footer {
     header h1 {
         font-size: 1.5em;
     }
+}
+
+/* Ensuring the section is styled correctly */
+#section2 {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Image container to hold both image and overlay text */
+.image-container {
+    position: relative;
+    width: 100%; /* Makes sure the container spans the full section width */
+    max-width: 100%;
+    margin: 0 auto; /* Centers the container */
+    margin-left: 0;
+    margin-right: 0; /* Remove any side margins */
+
+}
+
+/* Styling the image */
+.section-image {
+    width: 100%; /* Ensures the image fills the container */
+    height: auto; /* Maintains the aspect ratio */
+    border-radius: 8px; /* Optional: Rounds the image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+/* Styling for the text overlay */
+.overlay-text {
+    position: absolute; /* Positions the text over the image */
+    top: 50%; /* Centers text vertically */
+    left: 50%; /* Centers text horizontally */
+    transform: translate(-50%, -50%); /* Fine-tunes to center the text exactly */
+    color: white; /* Makes the text white */
+    font-size: 2em; /* Adjust the text size */
+    font-weight: bold; /* Optional: Makes the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Adds a shadow to make text stand out */
+    text-align: left; /* Centers the text */
+    border-radius: 0%;
+    transform: translate(-50%, -9%);
+    font-family: 'Arial', sans-serif; /* Change font family */
 }
